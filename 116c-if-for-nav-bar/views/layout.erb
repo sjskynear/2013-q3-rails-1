@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+    <title>title</title>
+  </head>
+  
+  <body>
+    <div class='nav'>
+    
+      <div class='nav-element nav1'>
+        <% if @title == "home" %>
+          home
+        <% else %>
+          <a href='/'>home</a>
+        <% end %>
+      </div>
+      
+      <div class='nav-element nav2'>
+        <% if @title == "about us" %>
+          about us
+        <% else %>
+          <a href='/about-us'>about us</a>
+        <% end %>
+      </div>
+      
+      <div class='nav-element nav3'>
+        <% if @title == "contact us" %>
+          contact us
+        <% else %>
+          <a href='/contact-us'>contact us</a>
+        <% end %>
+      </div>
+      
+    </div>
+
+       <h2><%= @title %></h2>
+
+       <%== yield %>
+
+    <hr>
+    
+    <p>(C) 2013 sj skynear.  all rights reserved.</p>
+    
+  </body>
+</html>
