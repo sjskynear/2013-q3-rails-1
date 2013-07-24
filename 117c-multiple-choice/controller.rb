@@ -4,4 +4,14 @@ get "/" do
   halt erb(:index)
 end
 
-# TODO: add more handlers below
+get "/117page-1/1" do
+  halt erb(:repost1)
+end
+
+get "/117page-2/2" do
+  halt erb(:repost1)
+end
+
+get "/117page-3/3" do
+  halt erb(:repost1)
+end
